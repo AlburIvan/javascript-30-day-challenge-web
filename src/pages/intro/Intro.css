@@ -1,0 +1,77 @@
+
+:root {
+  --laravel-pink: #E36D64;
+  --dark-gray: #3E3C3C;
+  font-family: Helvetica, sans-serif, sans-serif;
+  background-color: white;
+}
+
+#root {
+  height: 100%;
+}
+
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.title {
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.title > h1 {
+  color: var(--dark-gray);
+  font-size: 6em;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.title > h1 > span:nth-child(2) {
+  font-weight: bold;
+  color: var(--laravel-pink)
+}
+
+
+.sub-title {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.sub-title > p {
+  color: var(--dark-gray);
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.footer > span{
+  color: var(--dark-gray);
+  margin-bottom: 35px;
+}
+
+
+
+
+.hidden {
+  visibility: hidden;
+}
