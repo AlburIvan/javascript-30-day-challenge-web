@@ -30,7 +30,7 @@ export class Intro extends Component {
     footer.classList.add('fadeInUp');
 
     setTimeout(() => {
-      console.log('vamo pal otro lao')
+      this.props.history.push('/app');
     },3000)
   }
 
