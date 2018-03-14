@@ -39,18 +39,18 @@ export class Intro extends Component {
     return (
       <div className="container">
         <div className="title">
-        <h1>
-          <span id="text-left" className="hidden animated">Javascript </span>
-          <CountUp
-            className="animated fadeIn countup"
-            start={0}
-            end={30}
-            duration={4.5}
-            useEasing={true}
-            onComplete={this.onCountingComplete}
-          />
-          <span id="text-right" className="hidden animated"> Day Challenge</span>
-        </h1>
+          <h1>
+            <span id="text-left" className="hidden animated">Javascript </span>
+            <CountUp
+              className="animated fadeIn countup"
+              start={0}
+              end={30}
+              duration={4.5}
+              useEasing={true}
+              onComplete={this.onCountingComplete}
+            />
+            <span id="text-right" className="hidden animated"> Day Challenge</span>
+          </h1>
         </div>
         <div className="hidden sub-title">
           <span>Course by Wes Bos</span>

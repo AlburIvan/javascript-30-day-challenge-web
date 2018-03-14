@@ -2,6 +2,7 @@
 :root {
   --laravel-pink: #E36D64;
   --dark-gray: #3E3C3C;
+  --rain-blue: #E0EAFB;
   font-family: Helvetica, sans-serif, sans-serif;
   background-color: white;
 }
@@ -64,7 +65,7 @@ html, body {
   justify-content: flex-end;
 }
 
-.footer > span{
+.footer > span {
   color: var(--dark-gray);
   margin-bottom: 35px;
 }

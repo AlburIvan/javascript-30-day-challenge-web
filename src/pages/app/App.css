@@ -5,23 +5,122 @@ html, body {
 
 
 .container {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  /* justify-content: center; */
-  align-items: center;
-  width: 100%;
+  height: 100%;
+  padding: 16px 16px;
+}
+
+.challenge-digit {
+  color: var(--laravel-pink);
+  font-size: 4.5em;
+  font-weight: 600;
+}
+
+.challenge__viewer {
   height: 100%;
 }
 
-.title {
-  flex: 1;
+.challenge__viewer_title {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 70px;
+  color: var(--laravel-pink);
+  font-size: 4.5em;
+  font-weight: 500;
 }
 
-.sub-title {
-  flex: 1;
+.challenge__viewer_carousel {
 }
 
-.footer {
-  flex: 1;
+.challenge__viewer_carousel_boxes {
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+
+.challenge__viewer_carousel_box {
+  /* position: absolute; */
+  display: inline-block;
+  background: #FFFFFF;
+  box-shadow: 0 13px 29px 9px #EAF2FA;
+  border-radius: 8px;
+}
+
+.box-active {
+  width: 500px;
+  height: 430px;
+  left: 40%;
+  z-index: 5;
+}
+
+.box-next-left {
+  width: 414px;
+  height: 356px;
+  margin-top: 36px;
+  left: 33%;
+  z-index: 4;
+}
+
+.box-next-right {
+  width: 414px;
+  height: 356px;
+  margin-top: 36px;
+  right: 33%;
+  z-index: 4;
+}
+
+.box-queued-left {
+  width: 330px;
+  height: 285px;
+  left: 27%;
+  margin-top: 72px;
+  z-index: 3;
+}
+
+.box-queued-right {
+  width: 330px;
+  height: 285px;
+  right: 27%;
+  margin-top: 72px;
+  z-index: 3;
+}
+
+.challenge__viewer_carousel_left {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-left: 70px;
+  fill: var(--rain-blue);
+}
+
+.challenge__viewer_carousel_right {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-right: 70px;
+  fill: var(--rain-blue);
+}
+
+.challenge__viewer_description > h3 {
+
+  text-align: center;
+  color: var(--laravel-pink);
+  font-size: 25px;
+  text-align: left;
+}
+
+.challenge__viewer_description > p {
+  text-align: center;
+  color: var(--dark-gray);
+  font-family: Helvetica-Light;
+  font-size: 19px;
+  line-height: 34px;
+}
+
+.not-selectable {
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */      
 }
