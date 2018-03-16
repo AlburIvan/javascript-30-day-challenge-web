@@ -36,22 +36,20 @@ class App extends Component {
         <div className="challenge__viewer">
           <h1 className="challenge__viewer_title not-selectable">Type Ahead</h1>
           <div className="challenge__viewer_carousel">
-            <div className="challenge__viewer_carousel_boxes">
               <div className="challenge__viewer_carousel_box box-active"></div>
               <div className="challenge__viewer_carousel_box box-next-left"></div>
               <div className="challenge__viewer_carousel_box box-next-right"></div>
               <div className="challenge__viewer_carousel_box box-queued-left"></div>
               <div className="challenge__viewer_carousel_box box-queued-right"></div>
-            </div>
-            <span className="challenge__viewer_carousel_left not-selectable"><LeftArrow /></span>
-            <span className="challenge__viewer_carousel_right not-selectable"><RightArrow /></span>
           </div>
+          <div className="challenge__viewer_carousel_button button-left not-selectable"><LeftArrow /></div>
+          <div className="challenge__viewer_carousel_button button-right not-selectable"><RightArrow /></div>
           <div className="challenge__viewer_description">
             <h3 className="not-selectable">Description</h3>
             <p>
               Ea maxime accusamus dicta assumenda delectus iusto. A tempore et delectus nemo dolorem quod. 
               Enim repudiandae dolor et optio corrupti. Omnis nisi ut molestiae explicabo eveniet maxime. 
-              Eum laudantium sunt eum.
+              Eum laudantium sunt cum.
             </p>
           </div>
         </div>

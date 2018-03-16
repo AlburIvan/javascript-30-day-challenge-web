@@ -24,81 +24,103 @@ html, body {
   margin-top: 60px;
   margin-bottom: 70px;
   color: var(--laravel-pink);
-  font-size: 4.5em;
+  font-size: 4.5rem;
   font-weight: 500;
 }
 
 .challenge__viewer_carousel {
+  /* margin: 0 auto; */
+  transform-style: flat;
+  transition: transform 1s;
+  height: 26.875em;
+  padding:2.5% 0;
+  position: relative;
+  /* margin-left: 200px; */
+  /* margin-left: auto; */
+  /* margin-right: auto; */
 }
-
-.challenge__viewer_carousel_boxes {
-  margin-left: 200px;
-  margin-right: 200px;
-}
-
 
 .challenge__viewer_carousel_box {
+ 
+  /* display: block; */
   /* position: absolute; */
-  display: inline-block;
   background: #FFFFFF;
   box-shadow: 0 13px 29px 9px #EAF2FA;
   border-radius: 8px;
+  /* box-sizing: border-box; */
+  /* width: 100%; */
+  /* flex: none; */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .box-active {
   width: 500px;
-  height: 430px;
-  left: 40%;
+  height: 26.875em;
+  margin: auto;
+  /* left: 40%; */
   z-index: 5;
 }
 
 .box-next-left {
   width: 414px;
   height: 356px;
-  margin-top: 36px;
-  left: 33%;
+  margin: auto;
+  /* left: 33%; */
   z-index: 4;
+ 
+ 
 }
 
 .box-next-right {
   width: 414px;
   height: 356px;
   margin-top: 36px;
-  right: 33%;
+  margin: auto;
+  /* right: 33%; */
   z-index: 4;
+ 
 }
 
 .box-queued-left {
   width: 330px;
   height: 285px;
-  left: 27%;
+  /* left: 27%; */
   margin-top: 72px;
+  margin: auto;
   z-index: 3;
+  
 }
 
 .box-queued-right {
   width: 330px;
   height: 285px;
-  right: 27%;
+  /* right: 27%; */
   margin-top: 72px;
+  margin: auto;
   z-index: 3;
+  
 }
 
-.challenge__viewer_carousel_left {
-  cursor: pointer;
+
+.challenge__viewer_carousel_button {
   position: absolute;
+}
+
+.button-left {
+  cursor: pointer;
   top: 50%;
-  left: 0;
-  margin-left: 70px;
+  left: 4em;
   fill: var(--rain-blue);
 }
 
-.challenge__viewer_carousel_right {
+.button-right {
   cursor: pointer;
-  position: absolute;
   top: 50%;
-  right: 0;
-  margin-right: 70px;
+  right: 5em;
   fill: var(--rain-blue);
 }
 
