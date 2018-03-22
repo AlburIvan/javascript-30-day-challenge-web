@@ -55,7 +55,10 @@ html, body {
   right: 0;
   bottom: 0;
   left: 0;
+  /* transition: ease-in-out 0.4s; */
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
 }
+
 
 .box-active {
   width: 500px;
@@ -69,10 +72,9 @@ html, body {
   width: 414px;
   height: 356px;
   margin: auto;
+  transform: translateX(-250px);
   /* left: 33%; */
   z-index: 4;
- 
- 
 }
 
 .box-next-right {
@@ -80,6 +82,7 @@ html, body {
   height: 356px;
   margin-top: 36px;
   margin: auto;
+  transform: translateX(250px);
   /* right: 33%; */
   z-index: 4;
  
@@ -88,9 +91,9 @@ html, body {
 .box-queued-left {
   width: 330px;
   height: 285px;
-  /* left: 27%; */
   margin-top: 72px;
   margin: auto;
+  transform: translateX(-400px);
   z-index: 3;
   
 }
@@ -98,13 +101,16 @@ html, body {
 .box-queued-right {
   width: 330px;
   height: 285px;
-  /* right: 27%; */
   margin-top: 72px;
   margin: auto;
+  transform: translateX(400px);
   z-index: 3;
-  
 }
 
+.box-hidden {
+  opacity: 0;
+  display: none;
+}
 
 .challenge__viewer_carousel_button {
   position: absolute;
@@ -124,6 +130,12 @@ html, body {
   fill: var(--rain-blue);
 }
 
+
+.challenge__viewer_description {
+
+  margin: 0 850px;
+}
+
 .challenge__viewer_description > h3 {
 
   text-align: center;
@@ -133,7 +145,7 @@ html, body {
 }
 
 .challenge__viewer_description > p {
-  text-align: center;
+  text-align: left;
   color: var(--dark-gray);
   font-family: Helvetica-Light;
   font-size: 19px;
